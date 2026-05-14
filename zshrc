@@ -7,7 +7,7 @@ if (( ${+DEBUG_ZSH_PERF} )); then
 fi
 # example command: DEBUG_ZSH_PROF=1 zsh -i
 
-: "${ZSH_ROOT:=$ZDOTDIR/.zsh}"
+: "${ZSH_ROOT:=/etc/zsh/.zsh}"
 
 _zsh_compile_if_needed() {
   local src=$1 dst="${1}.zwc"
